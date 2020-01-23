@@ -7,4 +7,5 @@ export const theme = {
     regular: 400,
     bold: 700,
   },
+  primary: 'hsl(2, 76%, 48)'
 };
