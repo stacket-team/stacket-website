@@ -13,6 +13,7 @@ module.exports = {
         assets: path.join(__dirname, 'src/assets'),
         components: path.join(__dirname, 'src/components'),
         pages: path.join(__dirname, 'src/pages'),
+        theme: path.join(__dirname, 'src/theme'),
         src: path.join(__dirname, 'src'),
       },
     },
