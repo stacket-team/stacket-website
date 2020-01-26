@@ -2,7 +2,7 @@
   "name": "stacket",
   "private": true,
   "description": "stacked.dev website",
-  "version": "0.1",
+  "version": "0.0.1",
   "author": "@krylowicz @morswin22",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
