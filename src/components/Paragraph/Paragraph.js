@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledParagraph = styled.p`
-  margin: 0;
+  margin: ${({ down }) => (down ? '12px 0 0 0' : '0')};
   padding: 0;
   font-family: ${({ theme }) => theme.font.hero};
   font-size: 1rem;
@@ -11,12 +11,17 @@ const StyledParagraph = styled.p`
   text-align: center;
 `;
 
-const Paragraph = ({ children }) => (
-  <StyledParagraph>{children}</StyledParagraph>
+const Paragraph = ({ children, down }) => (
+  <StyledParagraph down={down}>{children}</StyledParagraph>
 );
 
 Paragraph.propTypes = {
   children: PropTypes.string.isRequired,
+  down: PropTypes.bool,
+};
+
+Paragraph.defaultProps = {
+  down: false,
 };
 
 export default Paragraph;

@@ -13,17 +13,15 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const StyledHeading = styled(Heading)`
-  margin-bottom: 30px;
-`;
-
 const HeroText = () => (
   <Wrapper>
-    <StyledHeading>contact@stacket.dev</StyledHeading>
+    <Heading big>contact@stacket.dev</Heading>
     <Paragraph>
       we know everybody hates these „mailto” links that open in the mail app.
     </Paragraph>
-    <Paragraph>just click our email to copy it to your clipboard</Paragraph>
+    <Paragraph down>
+      just click our email to copy it to your clipboard
+    </Paragraph>
   </Wrapper>
 );
 
