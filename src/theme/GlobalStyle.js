@@ -15,6 +15,9 @@ const GlobalStyle = createGlobalStyle`
   
   body {
     font-family: hero-new, sans-serif;
+    background: ${({ theme }) => theme.color.primary};
+    color: ${({ theme }) => theme.color.white};
+    padding: 30px;
   }
 `;
 

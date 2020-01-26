@@ -70,3 +70,4 @@ yarn-error.log
 
 # Webstorm files
 .idea
+package-lock.json

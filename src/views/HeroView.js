@@ -1,5 +1,6 @@
 import React from 'react';
+import Header from 'components/Header/Header';
 
-const HeroView = () => <h1>this is hero view</h1>;
+const HeroView = () => <Header />;
 
 export default HeroView;
