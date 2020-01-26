@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
   <defs>
     <style>
+      @import url("https://use.typekit.net/zei8qhj.css");
+
       .cls-1 {
         clip-path: url(#clip-Logo_-_mobile);
       }
@@ -11,7 +13,7 @@
 
       .cls-2, .cls-3 {
         font-size: 64px;
-        font-family: Domus-Regular, Domus;
+        font-family: jaf-domus, Domus-Regular, Domus;
       }
 
       .cls-3 {
