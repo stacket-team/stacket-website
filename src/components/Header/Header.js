@@ -14,7 +14,9 @@ const StyledWrapper = styled.div`
 const Header = () => (
   <StyledWrapper>
     <Logo />
-    <Link>contact</Link>
+    <Link to="/contact" from="/">
+      contact
+    </Link>
   </StyledWrapper>
 );
 
