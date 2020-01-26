@@ -1,14 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
   <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Logo_-_mobile);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 64px;
+        font-family: Domus-Regular, Domus;
+      }
+
+      .cls-3 {
+        fill: #d6221d;
+      }
+    </style>
     <clipPath id="clip-Logo_-_mobile">
       <rect width="70" height="70"/>
     </clipPath>
   </defs>
-  <g id="Logo_-_mobile" data-name="Logo - mobile" clip-path="url(#clip-Logo_-_mobile)">
+  <g id="Logo_-_mobile" data-name="Logo - mobile" class="cls-1">
     <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(4 -14)">
-      <text id="s" transform="translate(18 64)" fill="#fff" font-size="64" font-family="Domus-Regular, Domus"><tspan x="0" y="0">s</tspan></text>
-      <text id="_" data-name="{" transform="translate(0 67)" fill="#d6221d" font-size="64" font-family="Domus-Regular, Domus"><tspan x="0" y="0">{</tspan></text>
-      <text id="_2" data-name="}" transform="translate(41 67)" fill="#d6221d" font-size="64" font-family="Domus-Regular, Domus"><tspan x="0" y="0">}</tspan></text>
+      <text id="s" class="cls-2" transform="translate(18 64)"><tspan x="0" y="0">s</tspan></text>
+      <text id="_" data-name="{" class="cls-3" transform="translate(0 67)"><tspan x="0" y="0">{</tspan></text>
+      <text id="_2" data-name="}" class="cls-3" transform="translate(41 67)"><tspan x="0" y="0">}</tspan></text>
     </g>
   </g>
 </svg>
