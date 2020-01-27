@@ -21,7 +21,7 @@ const Link = ({ to, from, children, white, small }) => {
       back
     </StyledLink>
   ) : (
-    <StyledLink to={to} white={white} small>
+    <StyledLink to={to} white={white} small={small}>
       {children}
     </StyledLink>
   );
