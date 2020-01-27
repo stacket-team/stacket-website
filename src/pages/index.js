@@ -5,6 +5,7 @@ import GlobalStyle from 'theme/GlobalStyle';
 import Header from 'components/Header/Header';
 import HomeHeroText from 'views/HomeHeroText';
 import Skills from 'views/Skills';
+import Projects from 'views/Projects';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <Header />
     <HomeHeroText />
     <Skills />
+    <Projects />
   </ThemeProvider>
 );
 
