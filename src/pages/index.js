@@ -6,6 +6,7 @@ import Header from 'components/Header/Header';
 import HomeHeroText from 'views/HomeHeroText';
 import Skills from 'views/Skills';
 import Projects from 'views/Projects';
+import Footer from 'views/Footer';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <HomeHeroText />
     <Skills />
     <Projects />
+    <Footer />
   </ThemeProvider>
 );
 
