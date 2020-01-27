@@ -2,12 +2,14 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'theme/theme';
 import GlobalStyle from 'theme/GlobalStyle';
-import HeroView from 'views/HeroView';
+import Header from 'components/Header/Header';
+import HomeHeroText from 'views/HomeHeroText';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
-    <HeroView />
+    <Header />
+    <HomeHeroText />
   </ThemeProvider>
 );
 

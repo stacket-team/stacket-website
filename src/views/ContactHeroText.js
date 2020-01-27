@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const HeroText = () => (
+const ContactHeroText = () => (
   <Wrapper>
     <Heading big>contact@stacket.dev</Heading>
     <Paragraph>
@@ -25,4 +25,4 @@ const HeroText = () => (
   </Wrapper>
 );
 
-export default HeroText;
+export default ContactHeroText;
