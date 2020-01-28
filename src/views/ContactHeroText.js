@@ -48,7 +48,7 @@ class ContactHeroText extends React.Component {
         {copied ? (
           <>
             <Paragraph>
-              Great! It&apos;s copied to your clipboard now!
+              great! it&apos;s copied to your clipboard now!
             </Paragraph>
           </>
         ) : (
