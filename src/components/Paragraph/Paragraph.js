@@ -9,6 +9,10 @@ const StyledParagraph = styled.p`
   font-size: 1rem;
   color: ${({ theme }) => theme.color.grey};
   text-align: center;
+
+  @media (min-width: 1024px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Paragraph = ({ children, down }) => (

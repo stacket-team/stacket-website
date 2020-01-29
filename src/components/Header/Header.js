@@ -9,6 +9,10 @@ const StyledWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 1024px) {
+    padding: 1rem;
+  }
 `;
 
 const Header = () => (

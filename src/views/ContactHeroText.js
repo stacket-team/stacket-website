@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Paragraph from 'components/Paragraph/Paragraph';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -11,6 +11,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 1024px) {
+    width: auto;
+  }
 `;
 
 const Heading = styled.span`
@@ -21,50 +25,40 @@ const Heading = styled.span`
   font-weight: ${({ theme }) => theme.font.regular};
   color: ${({ theme, green }) =>
     green ? theme.color.tertiary : theme.color.white};
+
+  @media (min-width: 1024px) {
+    font-size: 5.2rem;
+  }
 `;
 
-class ContactHeroText extends React.Component {
-  state = {
-    value: 'contact@stacket.dev',
-    copied: false,
-  };
+const ContactHeroText = () => {
+  const value = 'contact@stacket.dev';
+  const [copied, setCopied] = useState(false);
 
-  onCopy = () => {
-    this.setState({ copied: true });
-  };
+  const handleCopied = () => setCopied(true);
 
-  render() {
-    const { value, copied } = this.state;
-
-    return (
-      <Wrapper>
-        <CopyToClipboard onCopy={this.onCopy} text={value}>
-          {copied ? (
-            <Heading green>contact@stacket.dev</Heading>
-          ) : (
-            <Heading>contact@stacket.dev</Heading>
-          )}
-        </CopyToClipboard>
-        {copied ? (
-          <>
-            <Paragraph>
-              great! it&apos;s copied to your clipboard now!
-            </Paragraph>
-          </>
-        ) : (
-          <>
-            <Paragraph>
-              we know everybody hates these „mailto” links that open in the mail
-              app.
-            </Paragraph>
-            <Paragraph down>
-              just click our email to copy it to your clipboard
-            </Paragraph>
-          </>
-        )}
-      </Wrapper>
-    );
-  }
-}
+  return (
+    <Wrapper>
+      <CopyToClipboard onCopy={handleCopied} text={value}>
+        {copied ? <Heading green>{value}</Heading> : <Heading>{value}</Heading>}
+      </CopyToClipboard>
+      {copied ? (
+        <>
+          <Paragraph>great! it&apos;s copied to your clipboard now!</Paragraph>
+        </>
+      ) : (
+        <>
+          <Paragraph>
+            we know everybody hates these „mailto” links that open in the mail
+            app.
+          </Paragraph>
+          <Paragraph down>
+            just click our email to copy it to your clipboard
+          </Paragraph>
+        </>
+      )}
+    </Wrapper>
+  );
+};
 
 export default ContactHeroText;

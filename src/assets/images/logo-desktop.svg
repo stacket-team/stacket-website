@@ -1,32 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="217" height="49" viewBox="0 0 217 49">
   <defs>
     <style>
       @import url("https://use.typekit.net/zei8qhj.css");
-
       .cls-1 {
         clip-path: url(#clip-Logo_-_desktop);
       }
 
       .cls-2 {
-        fill: #fffffe;
+        fill: #d6221d;
       }
 
       .cls-2, .cls-3 {
-        font-size: 120px;
+        font-size: 60px;
         font-family: jaf-domus, Domus-Regular, Domus;
       }
 
       .cls-3 {
-        fill: #d6221d;
+        fill: #fffffe;
       }
     </style>
     <clipPath id="clip-Logo_-_desktop">
-      <rect width="512" height="512"/>
+      <rect width="217" height="49"/>
     </clipPath>
   </defs>
   <g id="Logo_-_desktop" data-name="Logo - desktop" class="cls-1">
-    <text id="stacket" class="cls-2" transform="translate(77 289)"><tspan x="0" y="0">stacket</tspan></text>
-    <text id="_" data-name="{" class="cls-3" transform="translate(40 289)"><tspan x="0" y="0">{</tspan></text>
-    <text id="_2" data-name="}" class="cls-3" transform="translate(434 289)"><tspan x="0" y="0">}</tspan></text>
+    <text id="_" data-name="}" class="cls-2" transform="translate(198 41)"><tspan x="0" y="0">}</tspan></text>
+    <text id="stacket" class="cls-3" transform="translate(19 41)"><tspan x="0" y="0">stacket</tspan></text>
+    <text id="_2" data-name="{" class="cls-2" transform="translate(0 41)"><tspan x="0" y="0">{</tspan></text>
   </g>
 </svg>
