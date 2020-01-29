@@ -14,7 +14,14 @@ const frontSkills = [
   'apollo-client',
 ];
 
-const backSKills = ['graphql', 'express', 'mysql', 'mongodb', 'apollo-server'];
+const backSKills = [
+  'graphql',
+  'express',
+  'mysql',
+  'mongodb',
+  'apollo-server',
+  'php',
+];
 
 const StyledWrapper = styled.div`
   width: 100%;

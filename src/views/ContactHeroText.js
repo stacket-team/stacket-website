@@ -42,7 +42,7 @@ class ContactHeroText extends React.Component {
           {copied ? (
             <Heading green>contact@stacket.dev</Heading>
           ) : (
-            <Heading>contact@stacket.com</Heading>
+            <Heading>contact@stacket.dev</Heading>
           )}
         </CopyToClipboard>
         {copied ? (
