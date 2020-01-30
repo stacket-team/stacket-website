@@ -9,12 +9,17 @@ const StyledWrapper = styled.div`
   text-align: left;
   font-size: 1.5rem;
   font-family: ${({ theme }) => theme.font.jaf};
+
+  @media (min-width: 1024px) {
+    font-size: 2.4rem;
+    padding: 1rem;
+  }
 `;
 
 const Footer = () => (
   <StyledWrapper>
     <GithubLink />
-    <Link to="/contact" white small>
+    <Link to="/contact" white>
       contact
     </Link>
   </StyledWrapper>

@@ -21,7 +21,11 @@ const GithubLink = ({ desktop }) => (
 );
 
 GithubLink.propTypes = {
-  desktop: PropTypes.bool.isRequired,
+  desktop: PropTypes.bool,
+};
+
+GithubLink.defaultProps = {
+  desktop: undefined,
 };
 
 export default GithubLink;

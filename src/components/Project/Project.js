@@ -5,10 +5,20 @@ import PropTypes from 'prop-types';
 const StyledInnerWrapper = styled.div`
   width: 95%;
   margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    width: 40%;
+    margin: 0 auto;
+    transform: translateX(-50%);
+  }
 `;
 
 const Date = styled.p`
   font-size: 1.4rem;
+
+  @media (min-width: 1024px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const Title = styled.a`
@@ -16,6 +26,15 @@ const Title = styled.a`
   color: ${({ theme }) => theme.color.white};
   font-size: 2rem;
   margin-bottom: 0.8rem;
+  cursor: pointer;
+
+  @media (min-width: 1024px) {
+    font-size: 4rem;
+
+    &:hover ~ p {
+      display: block;
+    }
+  }
 `;
 
 const Description = styled.p`
@@ -26,6 +45,10 @@ const Description = styled.p`
   text-align: justify;
   border-radius: 0.3rem;
   font-size: 1.6rem;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 const Project = ({ title, date, link, description }) => (

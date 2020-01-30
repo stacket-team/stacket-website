@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 1024px) {
-    margin-left: 20%;
+    margin-left: 10%;
     margin-bottom: 40vh;
   }
 `;

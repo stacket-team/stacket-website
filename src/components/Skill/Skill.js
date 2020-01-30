@@ -22,8 +22,9 @@ const StyledInnerWrapper = styled.div`
   @media (min-width: 1024px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.5rem;
+    grid-gap: 2rem;
     margin: 0;
+    text-align: left;
   }
 `;
 

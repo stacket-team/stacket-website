@@ -4,6 +4,7 @@ import Media from 'react-media';
 import Skill from 'components/Skill/Skill';
 import SkillItem from 'components/Skill/SkillItem';
 import Heading from 'components/Heading/Heading';
+import Divider from '../components/Divider/Divider';
 
 const frontSkills = [
   'javascript',
@@ -38,15 +39,7 @@ const StyledWrapper = styled.div`
 const StyledHeading = styled(Heading)`
   @media (min-width: 1024px) {
     margin: 0;
-    position: relative;
   }
-`;
-
-const Divider = styled.div`
-  width: 100%;
-  height: 0.5rem;
-  margin-bottom: 10rem;
-  background: ${({ theme }) => theme.color.white};
 `;
 
 const Skills = () => (
