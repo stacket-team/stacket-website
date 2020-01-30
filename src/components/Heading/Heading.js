@@ -8,6 +8,10 @@ const StyledHeading = styled.h1`
   font-size: ${({ big }) => (big ? '3.2rem' : '2.6rem')};
   font-family: ${({ theme }) => theme.font.jaf};
   font-weight: ${({ theme }) => theme.font.regular};
+
+  @media (min-width: 1024px) {
+    font-size: 3.8rem;
+  }
 `;
 
 const Heading = ({ children, big }) => (
