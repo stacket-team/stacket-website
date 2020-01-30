@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'components/Link/Link';
+import GithubLink from '../components/GithubLink/GithubLink';
 
 const StyledWrapper = styled.div`
   margin: 10vh auto 0 auto;
@@ -10,17 +11,9 @@ const StyledWrapper = styled.div`
   font-family: ${({ theme }) => theme.font.jaf};
 `;
 
-const StyledLink = styled.a`
-  text-decoration: none;
-  color: ${({ theme }) => theme.color.white};
-  margin-right: 1rem;
-`;
-
 const Footer = () => (
   <StyledWrapper>
-    <StyledLink href="https://github.com/stacket-team" target="_blank">
-      github
-    </StyledLink>
+    <GithubLink />
     <Link to="/contact" white small>
       contact
     </Link>

@@ -10,7 +10,8 @@ const StyledHeading = styled.h1`
   font-weight: ${({ theme }) => theme.font.regular};
 
   @media (min-width: 1024px) {
-    font-size: 3.8rem;
+    font-size: 4.2rem;
+    letter-spacing: 0.1rem;
   }
 `;
 
