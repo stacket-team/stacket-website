@@ -9,7 +9,7 @@ const StyledParagraph = styled.p`
   text-align: ${({ center }) => (center ? 'center' : 'unset')};
 
   @media (min-width: 1024px) {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
   }
 `;
 

@@ -21,7 +21,10 @@ const Header = () => (
   <StyledWrapper>
     <Logo />
     <Media
-      queries={{ mobile: '(max-width: 1024px)', desktop: '(min-width: 1024px' }}
+      queries={{
+        mobile: '(max-width: 1024px)',
+        desktop: '(min-width: 1024px)',
+      }}
     >
       {matches => (
         <>

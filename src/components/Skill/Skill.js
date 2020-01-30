@@ -5,11 +5,6 @@ import PropTypes from 'prop-types';
 const StyledWrapper = styled.div`
   width: 95%;
   margin: 0 auto;
-
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-  }
 `;
 
 const StyledInnerWrapper = styled.div`
@@ -37,6 +32,7 @@ const StyledParagraph = styled.p`
   @media (min-width: 1024px) {
     margin-right: 10rem;
     font-size: 3rem;
+    margin-bottom: ${({ green }) => (green ? '2rem' : '0')};
   }
 `;
 
