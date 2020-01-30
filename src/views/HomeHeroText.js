@@ -16,15 +16,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const StyledHeading = styled(Heading)`
-  font-size: 5rem;
-`;
-
 const HomeHeroText = () => (
   <Wrapper>
-    <StyledHeading>
+    <Heading>
       we are small developer team <br /> specializing in <span>javascript</span>
-    </StyledHeading>
+    </Heading>
   </Wrapper>
 );
 
