@@ -10,22 +10,26 @@ const StyledHeading = styled.h1`
   font-weight: ${({ theme }) => theme.font.regular};
 
   @media (min-width: 1024px) {
-    font-size: 4.2rem;
+    font-size: 5rem;
     letter-spacing: 0.1rem;
   }
 `;
 
-const Heading = ({ children, big }) => (
-  <StyledHeading big={big}>{children}</StyledHeading>
+const Heading = ({ className, children, big }) => (
+  <StyledHeading big={big} className={className}>
+    {children}
+  </StyledHeading>
 );
 
 Heading.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
   big: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 Heading.defaultProps = {
   big: false,
+  className: undefined,
 };
 
 export default Heading;

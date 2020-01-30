@@ -7,6 +7,10 @@ const StyledParagraph = styled.p`
     green ? theme.color.tertiary : theme.color.grey};
   font-size: 1.5rem;
   text-align: ${({ center }) => (center ? 'center' : 'unset')};
+
+  @media (min-width: 1024px) {
+    font-size: 2.6rem;
+  }
 `;
 
 const SkillItem = ({ children }) => (

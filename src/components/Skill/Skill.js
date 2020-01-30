@@ -5,6 +5,11 @@ import PropTypes from 'prop-types';
 const StyledWrapper = styled.div`
   width: 95%;
   margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 
 const StyledInnerWrapper = styled.div`
@@ -13,6 +18,13 @@ const StyledInnerWrapper = styled.div`
   &:last-child {
     margin-bottom: 2.5rem;
   }
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+    margin: 0;
+  }
 `;
 
 const StyledParagraph = styled.p`
@@ -20,6 +32,11 @@ const StyledParagraph = styled.p`
     green ? theme.color.tertiary : theme.color.grey};
   font-size: 1.5rem;
   text-align: ${({ center }) => (center ? 'center' : 'unset')};
+
+  @media (min-width: 1024px) {
+    margin-right: 10rem;
+    font-size: 3rem;
+  }
 `;
 
 const Skill = ({ paragraph, children }) => (
