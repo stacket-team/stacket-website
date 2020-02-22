@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const StyledInnerWrapper = styled.div`
+const StyledWrapper = styled.div`
   width: 95%;
   margin: 0 auto;
 
   @media (min-width: 1024px) {
     width: 40%;
-    margin: 0 auto;
+    margin: 4rem auto;
     transform: translateX(-50%);
   }
 `;
@@ -30,10 +30,6 @@ const Title = styled.a`
 
   @media (min-width: 1024px) {
     font-size: 4rem;
-
-    &:hover ~ p {
-      display: block;
-    }
   }
 `;
 
@@ -45,18 +41,14 @@ const Description = styled.p`
   text-align: justify;
   border-radius: 0.3rem;
   font-size: 1.6rem;
-
-  @media (min-width: 1024px) {
-    display: none;
-  }
 `;
 
 const Project = ({ title, date, link, description }) => (
-  <StyledInnerWrapper>
+  <StyledWrapper>
     <Date>{date}</Date>
     <Title href={link}>{title}</Title>
     <Description>{description}</Description>
-  </StyledInnerWrapper>
+  </StyledWrapper>
 );
 
 Project.propTypes = {

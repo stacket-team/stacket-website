@@ -40,8 +40,7 @@ const HomeHeroText = () => (
                   specializing in <span>javascript</span>
                 </Heading>
                 <Heading>
-                  we spend most of our time building custom APIs and react
-                  applications
+                  we spend most of our time building custom web applications
                 </Heading>
               </>
             )}
@@ -52,7 +51,7 @@ const HomeHeroText = () => (
                   specializing in <span>javascript</span>
                 </Heading>
                 <Heading>
-                  we spend most of our time building <br /> custom api and react
+                  we spend most of our time building <br /> custom web
                   applications
                 </Heading>
               </>
